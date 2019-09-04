@@ -1,0 +1,198 @@
+:root {
+  --primary-color: #5b6364;
+  --gold: rgb(224, 151, 14);
+  --antic: antiquewhite;
+  --violet: #2b2931; }
+
+body {
+  color: var(--primary-color);
+  background: white;
+  font-family: 'Montserrat', 'proxima-nova', 'Helvetica Neue', Arial, sans-serif;
+  overflow-x: hidden; }
+
+a {
+  color: var(--primary-color);
+  text-decoration: none; }
+  a:hover {
+    color: var(--gold);
+    text-decoration: none; }
+
+.text-up {
+  text-transform: uppercase; }
+
+.btn-gold {
+  background-color: transparent;
+  color: var(--antic); }
+  .btn-gold:hover {
+    background-color: var(--gold); }
+
+.text-violet {
+  color: var(--violet); }
+
+.text-gold {
+  color: var(--gold);
+  text-shadow: 1px 1px 10px rgba(245, 245, 245, 0.452); }
+
+.text-prime {
+  color: var(--primary-color); }
+
+.text-soft {
+  color: var(--antic); }
+
+.s-slider:hover .slick-arrow {
+  opacity: 0.7; }
+
+.slick-arrow {
+  opacity: 0;
+  transition: 0.5s ease-in-out; }
+
+.slick-prev {
+  margin-left: 3rem;
+  border: 1px solid gold;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  z-index: 10; }
+
+.slick-next {
+  margin-right: 3rem;
+  border: 1px solid gold;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; }
+
+.slider-h {
+  color: var(--gold);
+  font-size: 2.7rem;
+  line-height: 3rem;
+  letter-spacing: 2px;
+  font-weight: 900;
+  text-shadow: 2px 2px 2rem #817e7e;
+  text-transform: uppercase; }
+
+.slider-p {
+  color: #fff5c8;
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  letter-spacing: 1px;
+  text-shadow: 4px 4px 2rem #222020; }
+
+.slide {
+  padding: 0 10rem;
+  height: 100vh;
+  width: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.main-overlay {
+  background: #575a5a5e; }
+
+.slide-1 {
+  background-image: url("../img/rev1.jpg"); }
+
+.slide-2 {
+  background-image: url("../img/rev-2.png"); }
+
+.slide-3 {
+  background-image: url("../img/rev-3.jpg"); }
+
+#cross {
+  height: auto;
+  width: auto;
+  background-image: url("../img/law-bg3.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+  #cross .card {
+    border: 0;
+    background: var(--primary-color);
+    color: antiquewhite;
+    margin-top: -10rem;
+    transform: scale(1);
+    transition: 0.2s all ease-in;
+    box-shadow: 1px 1px 20px 1px gray;
+    z-index: 500; }
+
+#mission {
+  background: var(--violet);
+  color: antiquewhite; }
+
+.team-img {
+  width: 65%;
+  box-shadow: 1px 1px 10px 1px var(--antic);
+  background: url("../img/ai.jpg"); }
+
+#team {
+  background: #201f25d0; }
+  #team .card-team {
+    color: var(--antic);
+    border: none;
+    background: transparent; }
+    #team .card-team a {
+      color: white;
+      text-decoration: none;
+      transition: 0.3s ease-in-out;
+      font-weight: 600; }
+      #team .card-team a:hover {
+        color: var(--gold); }
+    #team .card-team .card-body {
+      padding: 1.25rem 0; }
+    #team .card-team .card-footer {
+      padding: 0 2rem;
+      border: inherit;
+      background: inherit; }
+      #team .card-team .card-footer h5 {
+        text-shadow: 2px 2px 2rem var(--antic);
+        transition: 0.3s ease-in-out; }
+      #team .card-team .card-footer:hover h5 {
+        font-weight: 500;
+        text-shadow: 2px 2px 2rem var(--antic);
+        color: var(--gold); }
+
+.area {
+  margin: 1rem;
+  display: grid;
+  align-self: stretch;
+  transition: 0.3s all ease-in;
+  background: none; }
+  .area a {
+    color: var(--primary-color);
+    text-decoration: none; }
+    .area a:hover {
+      color: var(--gold); }
+  .area .card {
+    border: 0;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    transition: 0.2s ease-in; }
+    .area .card:hover {
+      box-shadow: 1px 1px 15px 1px darkgoldenrod; }
+
+#areas-output {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr); }
+
+#cta {
+  background-image: url("../img/form-2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.form-over {
+  padding: 2rem 2rem 1rem;
+  background: #685f54e8; }
+
+#sainar {
+  border-top: 4px solid var(--primary-color); }
+
+@media only screen and (max-width: 768px) {
+  #areas-output {
+    display: grid;
+    grid-template-columns: repeat(1, 3fr); }
+
+  #cross .card {
+    margin-top: 0; } }
